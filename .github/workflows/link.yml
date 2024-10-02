@@ -31,8 +31,8 @@ jobs:
 
     - name: Commit changes
       run: |
-        git config --global user.email "<>"
         git config --global user.name "Félix"
+        git config --global user.email "<>"
         git add README.md
         git commit -m "Update" -m "README.md - Checked links." -m "Meow!~"
         git push
