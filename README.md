@@ -1,19 +1,19 @@
 <div align="center"><h1>Earning</h1>
 <p>Earn money with software/website.</p>
 
-#
+___
 
 | Website | Type | Link |
 |---------|------|------|
-| AdNade | Surfbar | <a href="https://www.clictune.com/jsjk">🟩</a> |
-| Appinion | Survey | <a href="https://www.clictune.com/jsjl">🟩</a> |
-| AttaPoll | Survey | <a href="https://www.clictune.com/jsjm">🟩</a> |
-| Bitping |  | <a href="https://www.clictune.com/jsjo">🟩</a> |
+| AdNade | Surfbar | <a href="https://adnade.net/?ref=LeBazarDeBryan">🟩</a> |
+| Appinion | Survey | <a href="">🟩</a> |
+| AttaPoll | Survey | <a href="https://attapoll.app/join/ykvoh">🟩</a> |
+| Bitping |  | <a href="https://app.bitping.com/?r=fxiFvAEg">🟩</a> |
 | ClicTune | Links | <a href="https://www.clictune.com/auth/signup/140463">🟩</a> |
 | EarnApp | Share Internet | <a href="https://www.clictune.com/jsjp">🟩</a> |
 | Earnweb | Survey | <a href="https://www.clictune.com/jsjq">🟩</a> |
 | eBesucher | Surfbar | <a href="https://www.ebesucher.com/?ref=justfelix">🟩</a> |
-| Gaganode |  | <a href="https://www.clictune.com/jsjs">🟩</a> |
+| Gaganode | Share Internet | <a href="https://www.clictune.com/jsjs">🟩</a> |
 | Google Opinion Rewards | Survey | <a href="https://www.clictune.com/jsjt">🟩</a> |
 | Grass | Share Internet | <a href="https://www.clictune.com/jMYt">🟩</a> |
 | Honeygain | Share Internet | <a href="https://www.clictune.com/jsju">🟩</a> |
