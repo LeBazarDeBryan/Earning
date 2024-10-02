@@ -1,17 +1,40 @@
-import re
+name: Félix, The Checker.
 
-with open('result.log', 'r') as f:
-    results = f.read()
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
-with open('README.md', 'r') as f:
-    readme = f.read()
+jobs:
+  check_links:
+    runs-on: ubuntu-latest
 
-link_pattern = re.compile(r'<a href="(.*?)">🟩</a>')
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
 
-broken_links = [line.split(' ')[-1] for line in results.splitlines() if '✗' in line]
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
 
-for link in broken_links:
-    readme = re.sub(f'<a href="{link}">🟩</a>', f'<a href="{link}">🟥</a>', readme)
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests
 
-with open('README.md', 'w') as f:
-    f.write(readme)
+    - name: Run Félix
+      run: python felix_the_checker.py
+
+    - name: Commit changes
+      run: |
+        git config --global user.name "Félix"
+        git config --global user.email "action@github.com"
+        git add README.md
+        git commit -m "Update", "README.md - Checked links."
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
