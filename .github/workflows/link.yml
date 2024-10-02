@@ -34,7 +34,7 @@ jobs:
         git config --global user.name "Félix"
         git config --global user.email "action@github.com"
         git add README.md
-        git commit -m "Update", "README.md - Checked links."
+        git commit -m "Update" -m "README.md - Checked links. Meow!"
         git push
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
