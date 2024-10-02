@@ -3,6 +3,9 @@
 
 ___
 
+[![Félix, The Checker.](https://github.com/LeBazarDeBryan/Earning/actions/workflows/link.yml/badge.svg)](https://github.com/LeBazarDeBryan/Earning/actions/workflows/link.yml)
+___
+
 | Website | Type | Link |
 |---------|------|------|
 | AdNade | Surfbar | <a href="https://adnade.net/?ref=LeBazarDeBryan">🟩</a> |
