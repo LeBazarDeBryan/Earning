@@ -21,7 +21,7 @@ ___
 | Grass | Share Internet | <a href="https://app.getgrass.io/register/?referralCode=fvehjREzI13uGQv">🟩</a> |
 | Honeygain | Share Internet | <a href="https://r.honeygain.me/LEBAZD645C">🟩</a> |
 | JumpTask | Survey | <a href="https://www.jumptask.io/r/decyvanejacy">🟩</a> |
-| Macadam | Walking | <a href="https://macadam.carrd.co">🟩</a> |
+| Macadam | Walking | <a href="https://macadam.carrd.co">🟥</a> |
 | Pawns | Share Internet | <a href="https://pawns.app/?r=3178929">🟩</a> |
 | ProxyLite | Share Internet | <a href="https://proxylite.ru/?r=Q48OO8CX&utm_source=GitHub">🟩</a> |
 | Repocket | Share Internet | <a href="https://link.repocket.com/vxLX">🟩</a> |
