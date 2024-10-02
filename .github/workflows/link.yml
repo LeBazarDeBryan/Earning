@@ -14,10 +14,10 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4.2.0
 
     - name: Set up Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v5.2.0
       with:
         python-version: '3.x'
 
@@ -31,10 +31,10 @@ jobs:
 
     - name: Commit changes
       run: |
+        git config --global user.email "<>"
         git config --global user.name "Félix"
-        git config --global user.email "action@github.com"
         git add README.md
-        git commit -m "Update" -m "README.md - Checked links. Meow!"
+        git commit -m "Update" -m "README.md - Checked links." -m "Meow!~"
         git push
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
