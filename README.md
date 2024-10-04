@@ -9,12 +9,12 @@ ___
 | Website | Type | Link |
 |---------|------|------|
 | AdNade | Surfbar | <a href="https://adnade.net/?ref=LeBazarDeBryan">🟩</a> |
-| Appinion | Survey | <a href="">🟩</a> |
+| Appinion | Survey | <a href="">🟥</a> |
 | AttaPoll | Survey | <a href="https://attapoll.app/join/ykvoh">🟩</a> |
 | Bitping | Share Internet | <a href="https://app.bitping.com/?r=fxiFvAEg">🟥</a> |
 | ClicTune | Links | <a href="https://www.clictune.com/auth/signup/140463">🟩</a> |
 | EarnApp | Share Internet | <a href="https://earnapp.com/dashboard/signup?r=B3RlZCMl">🟩</a> |
-| Earnweb | Survey | <a href="">🟩</a> |
+| Earnweb | Survey | <a href="">🟥</a> |
 | eBesucher | Surfbar | <a href="https://www.ebesucher.com/?ref=justfelix">🟩</a> |
 | Gaganode | Share Internet | <a href="https://dashboard.gaganode.com/register?referral_code=brgbswarhqlepuu">🟩</a> |
 | Google Opinion Rewards | Survey | <a href="https://surveys.google.com/google-opinion-rewards/">🟩</a> |
