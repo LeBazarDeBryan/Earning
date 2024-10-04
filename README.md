@@ -3,7 +3,7 @@
 
 ___
 
-[![Félix, The Checker.](https://github.com/LeBazarDeBryan/Earning/actions/workflows/link.yml/badge.svg)](https://github.com/LeBazarDeBryan/Earning/actions/workflows/link.yml)
+[![Félix, The Checker.](https://github.com/LeBazarDeBryan/Earning/actions/workflows/link.yml/badge.svg)](https://github.com/LeBazarDeBryan/Earning/actions/workflows/link.yml) (Experimental)
 ___
 
 | Website | Type | Link |
