@@ -4,6 +4,10 @@ import re
 README_PATH = 'README.md'
 
 def check_link_status(url):
+    if not url or url.startswith('#') or url.startswith('/'):
+        print(f"Lien ignoré : {url} (vide ou relatif)")
+        return False
+    
     try:
         response = requests.get(url, allow_redirects=True, timeout=5, verify=False)
         
@@ -18,7 +22,7 @@ def update_readme(readme_path):
     with open(readme_path, 'r') as file:
         content = file.read()
 
-    pattern = r'(<a href="(http[s]?://[^\"]+)">)(🟩|🟥)(</a>)'
+    pattern = r'(<a href="(http[s]?://[^\"]*)">)(🟩|🟥)(</a>)'
     matches = re.findall(pattern, content)
 
     for match in matches:
