@@ -1,25 +1,37 @@
-import requests
 import re
+import time
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
+from webdriver_manager.chrome import ChromeDriverManager
 
 README_FILE = "README.md"
 LINK_PATTERN = re.compile(r'<a href="([^"]*)">([🟩🟥])</a>')
 
-HEADERS = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
-}
-
 def check_link_status(url):
     if not url:
         return "🟥"
-    
+
+    chrome_options = Options()
+    chrome_options.add_argument('--headless')
+    chrome_options.add_argument('--no-sandbox')
+    chrome_options.add_argument('--disable-dev-shm-usage')
+
+    service = Service(ChromeDriverManager().install())
+    driver = webdriver.Chrome(service=service, options=chrome_options)
+
     try:
-        response = requests.get(url, headers=HEADERS, timeout=10, allow_redirects=True, verify=False)
-        if response.status_code == 200:
+        driver.get(url)
+        time.sleep(5)
+        if driver.title:
             return "🟩"
         else:
             return "🟥"
-    except requests.RequestException:
+    except Exception as e:
+        print(f"Error checking {url}: {e}")
         return "🟥"
+    finally:
+        driver.quit()
 
 def update_readme():
     with open(README_FILE, "r", encoding="utf-8") as file:
