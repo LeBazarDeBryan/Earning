@@ -2,7 +2,7 @@ name: Félix, The Checker.
 
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 11 * * *'
   push:
     branches:
       - main
