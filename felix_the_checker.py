@@ -4,8 +4,7 @@ import re
 README_PATH = 'README.md'
 
 def check_link_status(url):
-    if not url or url.startswith('#') or url.startswith('/'):
-        print(f"Lien ignoré : {url} (vide ou relatif)")
+    if not url or url.startswith('?') or url.startswith('/'):
         return False
     
     try:
