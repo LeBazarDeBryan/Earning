@@ -1,37 +1,39 @@
 import re
 import time
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager
 
 README_FILE = "README.md"
 LINK_PATTERN = re.compile(r'<a href="([^"]*)">([🟩🟥])</a>')
 
+def check_link_with_selenium(url):
+    options = webdriver.ChromeOptions()
+    options.add_argument("--headless")
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
+
+    driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=options)
+    
+    try:
+        driver.get(url)
+        time.sleep(5)
+        status_code = driver.execute_script("return document.readyState;")
+        
+        if status_code == "complete":
+            return "🟩"
+        else:
+            return "🟥"
+    except Exception:
+        return "🟥"
+    finally:
+        driver.quit()
+
 def check_link_status(url):
     if not url:
         return "🟥"
 
-    chrome_options = Options()
-    chrome_options.add_argument('--headless')
-    chrome_options.add_argument('--no-sandbox')
-    chrome_options.add_argument('--disable-dev-shm-usage')
-
-    service = Service(ChromeDriverManager().install())
-    driver = webdriver.Chrome(service=service, options=chrome_options)
-
-    try:
-        driver.get(url)
-        time.sleep(5)
-        if driver.title:
-            return "🟩"
-        else:
-            return "🟥"
-    except Exception as e:
-        print(f"Error checking {url}: {e}")
-        return "🟥"
-    finally:
-        driver.quit()
+    return check_link_with_selenium(url)
 
 def update_readme():
     with open(README_FILE, "r", encoding="utf-8") as file:
