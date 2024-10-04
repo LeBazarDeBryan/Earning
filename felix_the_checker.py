@@ -4,12 +4,16 @@ import re
 README_FILE = "README.md"
 LINK_PATTERN = re.compile(r'<a href="([^"]*)">([🟩🟥])</a>')
 
+HEADERS = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+}
+
 def check_link_status(url):
     if not url:
         return "🟥"
     
     try:
-        response = requests.get(url, timeout=10)
+        response = requests.get(url, headers=HEADERS, timeout=10, allow_redirects=True, verify=False)
         if response.status_code == 200:
             return "🟩"
         else:
