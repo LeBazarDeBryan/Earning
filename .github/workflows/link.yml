@@ -27,6 +27,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install requests
+        pip install selenium
 
     - name: Run Félix
       run: python felix_the_checker.py
