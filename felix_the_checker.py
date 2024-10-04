@@ -50,9 +50,6 @@ def update_readme():
     if updated_content != content:
         with open(README_FILE, "w", encoding="utf-8") as file:
             file.write(updated_content)
-        print("README.md updated.")
-    else:
-        print("No updates needed.")
 
 if __name__ == "__main__":
     update_readme()
