@@ -5,8 +5,8 @@ README_PATH = 'README.md'
 
 def check_link_status(url):
     try:
-        response = requests.head(url, allow_redirects=True, timeout=5)
-        if response.status_code == 200:
+        response = requests.get(url, allow_redirects=True, timeout=5)
+        if response.status_code in [200, 301, 302]:
             return True
         return False
     except requests.RequestException:
