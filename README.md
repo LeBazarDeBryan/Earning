@@ -3,7 +3,7 @@
 
 ___
 
-[![Félix, The Checker.](https://github.com/LeBazarDeBryan/Earning/actions/workflows/link.yml/badge.svg)](https://github.com/LeBazarDeBryan/Earning/actions/workflows/link.yml) (Experimental)
+[![Félix, The Checker.](https://github.com/LeBazarDeBryan/Earning/actions/workflows/link.yml/badge.svg)](https://github.com/LeBazarDeBryan/Earning/actions/workflows/link.yml)
 ___
 
 | Website | Type | Link |
@@ -28,4 +28,11 @@ ___
 | Streetbees | Survey | <a href="https://www.streetbees.com">🟩</a> |
 | Sweatcoin | Walking | <a href="https://sweatco.in/i/severinegalera">🟩</a> |
 | WeWard | Walking | <a href="https://www.wewardapp.com">🟩</a> |
+
+___
+
+<details><summary><h2>About</h2></summary>
+  
+This is a little repositorie to win some money easily. Each website is verified by me before being added and being verified by ***Félix***, *The Checker!* It's a little bot that work everyday at 11 AM or whhen there's update. He verify all the link to see if it's down or not.
+</details>
 </div>
