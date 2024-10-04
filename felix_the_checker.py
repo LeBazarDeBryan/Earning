@@ -1,40 +1,33 @@
 import requests
 import re
 
-README_PATH = 'README.md'
+README_FILE = "README.md"
 
 def check_link_status(url):
-    if not url:
-        return False
-    
     try:
-        response = requests.get(url, allow_redirects=True, timeout=5, verify=False)
-        
-        if response.status_code in [200, 301, 302]:
-            return True
-        else:
-            return False
+        response = requests.get(url, timeout=5)
+        return response.status_code == 200
     except requests.RequestException:
         return False
 
-def update_readme(readme_path):
-    with open(readme_path, 'r') as file:
+def update_readme():
+    with open(README_FILE, "r", encoding="utf-8") as file:
         content = file.read()
 
-    pattern = r'(<a href="(http[s]?://[^\"]*)">)(🟩|🟥)(</a>)'
-    matches = re.findall(pattern, content)
+    link_pattern = re.compile(r'(\[.*?\]\((.*?)\))\s*(🟩|🟥)')
+    
+    updated_content = content
+    for match in link_pattern.finditer(content):
+        link_text, url, status_symbol = match.groups()
+        is_link_accessible = check_link_status(url)
 
-    for match in matches:
-        full_match, url, current_symbol, _ = match
-        if check_link_status(url):
-            new_symbol = "🟩"
-        else:
-            new_symbol = "🟥"
+        if not is_link_accessible and status_symbol == "🟩":
+            updated_content = updated_content.replace(f"{link_text} {status_symbol}", f"{link_text} 🟥")
+        elif is_link_accessible and status_symbol == "🟥":
+            updated_content = updated_content.replace(f"{link_text} {status_symbol}", f"{link_text} 🟩")
 
-        content = content.replace(f'{full_match}{current_symbol}</a>', f'{full_match}{new_symbol}</a>')
-
-    with open(readme_path, 'w') as file:
-        file.write(content)
+    with open(README_FILE, "w", encoding="utf-8") as file:
+        file.write(updated_content)
 
 if __name__ == "__main__":
-    update_readme(README_PATH)
+    update_readme()
