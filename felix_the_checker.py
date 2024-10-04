@@ -5,10 +5,12 @@ README_PATH = 'README.md'
 
 def check_link_status(url):
     try:
-        response = requests.get(url, allow_redirects=True, timeout=5)
+        response = requests.get(url, allow_redirects=True, timeout=5, verify=False)
+        
         if response.status_code in [200, 301, 302]:
             return True
-        return False
+        else:
+            return False
     except requests.RequestException:
         return False
 
