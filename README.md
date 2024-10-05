@@ -29,7 +29,7 @@ ___
 | Repocket | Share Internet | <a href="https://link.repocket.com/vxLX">🟩</a> |
 | Streetbees | Survey | <a href="https://www.streetbees.com">🟩</a> |
 | Sweatcoin | Walking | <a href="https://sweatco.in/i/severinegalera">🟩</a> |
-| TinyDrive | Mining | <a href="https://tinydrive.certificator.ca">🟩</a> |
+| TinyDrive | Mining | <a href="https://tinydrive.certificator.ca">🟥</a> |
 | WeWard | Walking | <a href="https://www.wewardapp.com">🟩</a> |
 </details>
 
