@@ -38,5 +38,10 @@ ___
 <details><summary><h2>About</h2></summary>
   
 This is a little repositorie to win some money easily. Each website is verified by me before being added and being verified by ***Félix***, *The Checker!* It's a little bot that work everyday at 11 AM or when there's update. He verify all the link to see if it's down or not.
+
+| Website | Link | Bot |
+|---------|------|-----|
+| <a href="https://example.com">Test</a> | 🟥 | [![Félix, The Checker.](https://github.com/LeBazarDeBryan/Earning/actions/workflows/link.yml/badge.svg)](https://github.com/LeBazarDeBryan/Earning/actions/workflows/link.yml) |
+
 </details>
 </div>
