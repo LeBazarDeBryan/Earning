@@ -37,13 +37,13 @@ ___
 
 <details><summary><h2>About</h2></summary>
   
-This is a little repositorie to win some money easily. Each website is verified by me before being added and being verified by ***Félix***, *The Checker!* It's a little bot that work everyday at 11 AM or when there's update. He verify all the link to see if it's down or not.
+This is a little repositorie to win some money easily. Each website is verified by me before being added and being verified by ***Félix***, *The Checker!* It's a little bot that work everyday at 11 AM or when there's update. He verify all the link to see if it's down or not. He usually take ~5 minutes to verify everything, including the test tab below.
 
 | Website | Link | Bot |
 |---------|------|-----|
 | Test    | <a href="https://example.com">✔️</a> | [![Félix, The Checker.](https://github.com/LeBazarDeBryan/Earning/actions/workflows/link.yml/badge.svg)](https://github.com/LeBazarDeBryan/Earning/actions/workflows/link.yml) |
 
-The symbol in the link tab should be "✔️", If it's not, there's a problem and I'm probably trying to fix it.
+The symbol in the **Link** tab should be "✔️", If it's not, there's a problem and I'm probably trying to fix it.
 
 </details>
 </div>
