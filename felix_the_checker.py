@@ -5,7 +5,7 @@ from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager
 
 README_FILE = "README.md"
-LINK_PATTERN = re.compile(r'<a href="([^"]*)">([🟩🟥])</a>')
+LINK_PATTERN = re.compile(r'<a href="([^"]*)">([✔️❌])</a>')
 
 def check_link_with_selenium(url):
     options = webdriver.ChromeOptions()
@@ -21,17 +21,17 @@ def check_link_with_selenium(url):
         status_code = driver.execute_script("return document.readyState;")
         
         if status_code == "complete":
-            return "🟩"
+            return "✔️"
         else:
-            return "🟥"
+            return "❌"
     except Exception:
-        return "🟥"
+        return "❌"
     finally:
         driver.quit()
 
 def check_link_status(url):
     if not url:
-        return "🟥"
+        return "❌"
 
     return check_link_with_selenium(url)
 
