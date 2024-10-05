@@ -41,7 +41,9 @@ This is a little repositorie to win some money easily. Each website is verified 
 
 | Website | Link | Bot |
 |---------|------|-----|
-| <a href="https://example.com">Test</a> | 🟥 | [![Félix, The Checker.](https://github.com/LeBazarDeBryan/Earning/actions/workflows/link.yml/badge.svg)](https://github.com/LeBazarDeBryan/Earning/actions/workflows/link.yml) |
+| Test    | <a href="https://example.com">🟥</a> | [![Félix, The Checker.](https://github.com/LeBazarDeBryan/Earning/actions/workflows/link.yml/badge.svg)](https://github.com/LeBazarDeBryan/Earning/actions/workflows/link.yml) |
+
+The box in the link tab should be green, If it's not, there's a problem and I'm probably trying to fix it.
 
 </details>
 </div>
