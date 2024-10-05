@@ -10,8 +10,8 @@ ___
   
 | Website | Type | Link |
 |---------|------|------|
-| AdNade | Surfbar | <a href="https://adnade.net/?ref=LeBazarDeBryan">🟩</a> |
-| Appinion | Survey | <a href="">🟥</a> |
+| AdNade | Surfbar | <a href="https://adnade.net/?ref=LeBazarDeBryan">✔️</a> |
+| Appinion | Survey | <a href="">❌</a> |
 | AttaPoll | Survey | <a href="https://attapoll.app/join/ykvoh">🟩</a> |
 | Bitping | Share Internet | <a href="https://app.bitping.com/?r=fxiFvAEg">🟩</a> |
 | ClicTune | Links | <a href="https://www.clictune.com/auth/signup/140463">🟩</a> |
